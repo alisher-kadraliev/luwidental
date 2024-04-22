@@ -887,3 +887,40 @@ h2 {
 }
 
 /* whatsapp */
+/* pagination */
+.custom-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.custom-pagination .swiper-pagination-bullet {
+	width: 11px;
+	height: 11px;
+	margin: 0 5px;
+	background-color: gray;
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: .2;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+}
+
+.swiper-pagination-bullet::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+	background-color:#9AC9C1;
+	opacity: 1;
+	width: 11px;
+	height: 11px;
+}
+/* pagination */

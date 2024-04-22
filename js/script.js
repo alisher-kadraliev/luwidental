@@ -19,6 +19,7 @@ tailwind.config = {
 
       colors: {
         primary: "#9AC9C1",
+        secondary: "#151515",
       },
       screens: {
         sm: "640px",
@@ -93,7 +94,63 @@ let swiperHero = new Swiper(".swiper-hero", {
     },
   },
 });
-
+let swiperWhy = new Swiper(".swiper-why", {
+  spaceBetween: 10,
+  loop: false,
+  pagination: {
+    el: ".custom-pagination", // Use your custom pagination selector
+    clickable: true, // Enable bullet click
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+let swiperService = new Swiper(".swiper-service", {
+  spaceBetween: 10,
+  loop: true,
+  pagination: {
+    el: ".custom-pagination", // Use your custom pagination selector
+    clickable: true, // Enable bullet click
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+  },
+});
+let swiperVideo = new Swiper(".swiper-video", {
+  spaceBetween: 10,
+  loop: false,
+  pagination: {
+    el: ".custom-pagination", // Use your custom pagination selector
+    clickable: true, // Enable bullet click
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
 // swiper
 
 // whatsapp

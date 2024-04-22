@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuwiDental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  </head>
+  <body>
+      <!-- Navbar Section Start bg-transparent -->
+      <div class="flex flex-row justify-between items-center bg-white container">
+        <a href="" class=" group bg-gradient-to-r from-[#31353A] my-6 px-8 py-3 rounded-xl via-[#30302D] to-[#020203] flex flex-row gap-3 text-white/70 max-lg:bg-none max-lg:text-black max-lg:p-0 max-lg:my-4 max-lg:font-bold"><span><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="group-hover:fill-primary transition duration-300 ease-in-out max-lg:fill-black" fill-rule="evenodd" clip-rule="evenodd" d="M14.2549 15.1055C14.1024 15.26 13.948 15.4166 13.7903 15.5758C11.0338 14.0432 8.92608 11.9319 7.41592 9.25483C7.61606 9.04832 7.81334 8.84825 8.00738 8.65146C8.43285 8.21996 8.84278 7.80423 9.2332 7.37107C9.9901 6.53134 10.0128 5.31859 9.2641 4.48074C8.73823 3.89233 8.17771 3.33425 7.6175 2.77646C7.47624 2.63581 7.33499 2.49518 7.19433 2.35409L7.16882 2.3285C6.77915 1.93759 6.38788 1.54509 5.96599 1.19026C5.12249 0.480916 3.91548 0.469263 3.09174 1.20041C2.44129 1.77775 1.83113 2.40126 1.222 3.02373C1.15537 3.09181 1.08875 3.15989 1.02209 3.22789C0.404649 3.85786 0.088218 4.62854 0.0189278 5.5068C-0.0625086 6.53924 0.126356 7.53365 0.441025 8.50676C1.44318 11.6058 3.23667 14.2261 5.43804 16.5887C7.09326 18.3651 8.98801 19.8498 11.1169 21.027C12.8345 21.9768 14.6062 22.7876 16.6006 22.9739C17.6989 23.0764 18.7263 22.8915 19.5795 22.1594C19.9619 21.8313 20.3131 21.467 20.6642 21.1028C20.791 20.9713 20.9177 20.8398 21.0459 20.71C21.0695 20.6862 21.093 20.6624 21.1166 20.6386C21.3593 20.3933 21.6028 20.1473 21.8231 19.8829C22.5277 19.0376 22.5228 17.8148 21.7832 16.9992C21.3051 16.4718 20.7998 15.9684 20.2948 15.4653C20.1809 15.3518 20.0669 15.2383 19.9533 15.1245C19.8689 15.04 19.7847 14.9551 19.7005 14.8702C19.3055 14.4717 18.9099 14.0727 18.4858 13.7072C17.9325 13.2303 17.2731 13.0906 16.5523 13.2735C16.0447 13.4022 15.6501 13.7055 15.2907 14.0626C14.9467 14.4043 14.6061 14.7495 14.2549 15.1055ZM1.91739 8.59203C1.61757 7.7565 1.37144 6.90738 1.37503 5.89524C1.33211 5.17725 1.63092 4.49334 2.23577 3.92239C2.56375 3.61282 2.88152 3.29258 3.1993 2.97233C3.37165 2.79864 3.544 2.62495 3.71799 2.45295C4.29497 1.88263 4.7895 1.882 5.36182 2.45113C6.23339 3.3178 7.10383 4.18559 7.97289 5.05476C8.60732 5.68936 8.61003 6.11534 7.97616 6.74662C7.46136 7.25936 6.94046 7.76603 6.41785 8.27081C5.96901 8.70443 5.89154 9.10415 6.14258 9.66921C6.7458 11.027 7.6506 12.1759 8.65131 13.2564C9.75901 14.4524 10.9823 15.5132 12.3934 16.3452C12.6865 16.518 12.991 16.6723 13.2949 16.8262L13.3342 16.8461C13.8006 17.0826 14.2419 17.0099 14.6278 16.6307C14.9787 16.2858 15.3271 15.9385 15.6755 15.5912C15.8636 15.4037 16.0517 15.2161 16.2402 15.029C16.251 15.0183 16.2617 15.0076 16.2725 14.9968C16.3384 14.9311 16.4045 14.8651 16.477 14.8072C16.9072 14.4637 17.351 14.4746 17.747 14.8595C18.218 15.3173 18.6825 15.7815 19.1471 16.2458C19.295 16.3935 19.4428 16.5413 19.5909 16.6888C19.6807 16.7783 19.7709 16.8674 19.8611 16.9565C20.1284 17.2205 20.3957 17.4847 20.6527 17.7583C21.0793 18.2124 21.0998 18.6823 20.6771 19.1361C20.0665 19.7916 19.4408 20.435 18.7925 21.0534C18.2631 21.5584 17.5885 21.6899 16.8756 21.6394C15.4622 21.5392 14.1663 21.0439 12.9108 20.4335C10.0515 19.0434 7.61139 17.1151 5.57051 14.6898C4.02561 12.8539 2.73232 10.863 1.91739 8.59203Z" fill="#D8D8D8"/>
+        </svg>
+        </span><span class="group-hover:text-primary">+90 501 161 15 66</span></a>
+        <div class="flex flex-row gap-6 max-lg:hidden">
+          <div class="text-gray-600/80 font-extrabold italic">Follow us our Social Media</div>
+          <a href="" class="group">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_0_2244" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="22">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00012207H22.5316V21.9999H0V0.00012207Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_2244)">
+<path class="group-hover:fill-primary transition duration-300 ease-in-out" d="M21.2876 0.00012207H1.24401C0.555911 0.00012207 0 0.542917 0 1.21478V20.7855C0 21.4556 0.555911 22.0001 1.24401 22.0001H12.0345V13.4798H9.09739V10.1594H12.0345V7.71241C12.0345 4.86937 13.8127 3.32231 16.4075 3.32231C17.6515 3.32231 18.7199 3.41248 19.0314 3.45315V6.42349H17.2314C15.819 6.42349 15.5456 7.07944 15.5456 8.0395V10.1594H18.9137L18.4754 13.4798H15.5456V22.0001H21.2876C21.9739 22.0001 22.5316 21.4556 22.5316 20.7855V1.21478C22.5316 0.542917 21.9739 0.00012207 21.2876 0.00012207" fill="#4b5563cc"/>
+</g>
+</svg>
+</a>
+          <a href="" class="group"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_0_2247" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="22">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.682617 0H23.2139V22H0.682617V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_2247)">
+<path class="group-hover:fill-primary transition duration-300 ease-in-out" fill-rule="evenodd" clip-rule="evenodd" d="M16.4328 0C18.2436 0 19.9476 0.687776 21.2278 1.93956C22.508 3.18958 23.2142 4.85333 23.2142 6.62139V15.3786C23.2142 17.1467 22.508 18.8104 21.2278 20.0604C19.9476 21.3105 18.2436 22 16.4328 22H7.46401C5.65141 22 3.94927 21.3105 2.66905 20.0604C1.38701 18.8104 0.682617 17.1467 0.682617 15.3786V6.62139C0.682617 4.85333 1.38701 3.18958 2.66905 1.93956C3.94927 0.687776 5.65141 0 7.46401 0H16.4328ZM16.4328 20.1842C19.1472 20.1842 21.3545 18.0289 21.3545 15.3786V6.62139C21.3545 3.97107 19.1472 1.8158 16.4328 1.8158H7.46401C4.74964 1.8158 2.54229 3.97107 2.54229 6.62139V15.3786C2.54229 18.0289 4.74964 20.1842 7.46401 20.1842H16.4328Z" fill="#4b5563cc"/>
+</g>
+<path class="group-hover:fill-primary transition duration-300 ease-in-out" fill-rule="evenodd" clip-rule="evenodd" d="M6.19922 10.9998C6.19922 14.0957 8.77778 16.6134 11.9485 16.6134C15.1191 16.6134 17.6977 14.0957 17.6977 10.9998C17.6977 7.90395 15.1191 5.38623 11.9485 5.38623C8.77778 5.38623 6.19922 7.90395 6.19922 10.9998ZM8.0589 10.9998C8.0589 8.90644 9.80449 7.20203 11.9485 7.20203C14.0924 7.20203 15.838 8.90644 15.838 10.9998C15.838 13.0932 14.0924 14.7976 11.9485 14.7976C9.80449 14.7976 8.0589 13.0932 8.0589 10.9998Z" fill="#4b5563cc"/>
+<path class="group-hover:fill-primary transition duration-300 ease-in-out" d="M18.9759 5.21609C18.9759 5.81193 18.4816 6.29461 17.8713 6.29461C17.2629 6.29461 16.7686 5.81193 16.7686 5.21609C16.7686 4.62025 17.2629 4.13757 17.8713 4.13757C18.4816 4.13757 18.9759 4.62025 18.9759 5.21609" fill="#4b5563cc"/>
+</svg>
+</a>
+          <a href="" class="group"><svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="group-hover:fill-primary transition duration-300 ease-in-out" fill-rule="evenodd" clip-rule="evenodd" d="M28.1709 0.656243C29.5139 1.01791 30.572 2.08278 30.9313 3.43491C31.5839 5.88606 31.5839 11 31.5839 11C31.5839 11 31.5839 16.1139 30.9313 18.5651C30.572 19.9172 29.5139 20.9821 28.1709 21.3438C25.7356 22 15.9706 22 15.9706 22C15.9706 22 6.20567 22 3.77037 21.3438C2.42739 20.9821 1.36923 19.9172 1.01001 18.5651C0.357422 16.1139 0.357422 11 0.357422 11C0.357422 11 0.357422 5.88606 1.01001 3.43491C1.36923 2.08278 2.42739 1.01791 3.77037 0.656243C6.20567 0 15.9706 0 15.9706 0C15.9706 0 25.7356 0 28.1709 0.656243ZM20.9382 11L12.7772 6.3569V15.6431L20.9382 11Z" fill="#4b5563cc"/>
+</svg>
+</a>
+        </div>
+      </div>
+      <div class="bg-[url('img/hero/bg.jpg')] bg-cover relative overflow-hidden">
+   <div class="ud-header flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-72 max-w-full px-4 max-lg:px-0">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img
+                src="img/logo/image.png"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full z-50 max-lg:overflow-scroll hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg  lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none  xl:px-6"
+              >
+                <ul class="blcok lg:flex 2xl:ml-20 ">
+                  <li class="group relative">
+                    <a
+                      href="#home"
+                      class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#about"
+                      class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                    > 
+                      About Us
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a
+                      href="javascript:void(0)"
+                      class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      SERVICES
+
+                      <svg
+                        class="ml-2 fill-current"
+                        width="16"
+                        height="20"
+                        viewBox="0 0 16 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                        />
+                      </svg>
+                    </a>
+                    <div
+                      class="submenu relative left-0 z-50 top-full hidden w-full rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                    >
+                      <a
+                        href="about.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        About Page
+                      </a>
+                      <a
+                        href="pricing.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        Pricing Page
+                      </a>
+                      <a
+                        href="contact.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        Contact Page
+                      </a>
+                      <a
+                        href="blog-grids.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        Blog Grid Page
+                      </a>
+                      <a
+                        href="blog-details.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        Blog Details Page
+                      </a>
+                      <a
+                        href="signup.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        Sign Up Page
+                      </a>
+                      <a
+                        href="signin.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        Sign In Page
+                      </a>
+                      <a
+                        href="404.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  "
+                      >
+                        404 Page
+                      </a>
+                    </div>
+                  </li>
+                    <li class="group relative">
+                    <a
+                      href="blog-grids.html"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      SMILE GALLERY
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#contact"
+                      class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+             <div class="flex items-center justify-end pr-16 lg:pr-0">
+              <div class="">
+                <div class="dropdown border rounded-full">
+                  <button
+                    onclick="openLangMenu()"
+                    class="dropdown-button group italic text-white hover:text-primary rounded py-2 px-4 text-base border-none cursor-pointer flex flex-row items-center justify-center gap-2 font-semibold"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:text-primary pointer-events-none max-lg:hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"></path></svg>
+
+                  TR
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 pointer-events-none group-hover:fill-primary"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id="dropdown"
+                    class="dropdown-content [&.show]:block translate-y-2 rounded hidden absolute bg-[#f1f1f1] w-[150px] max-w-[260px] overflow-auto shadow-xl z-10"
+                  >
+                    <a
+                      href=""
+                      class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-primary font-semibold"
+                    >English
+                    </a>
+                    <a
+                      href=""
+                      class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-primary font-semibold"
+                    >Русский
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-[#979797] max-lg:hidden" />
+    <!--Navbar Section End bg-transparent -->
+    <!--Hero  -->
+    <section>
+      <div class="container lg:w-full max-lg:pl-0 max-lg:mt-10">
+        <div class="flex flex-row gap-4 max-lg:gap-0 justify-between max-lg:justify-start max-lg:overflow-hidden items-center max-lg:items-end">
+          <div class="flex flex-col w-1/2 max-lg:w-[200px] max-lg:pb-40 gap-8 max-lg:gap-1 max-lg:pl-7">
+            <h2 class="font-light text-[30px] w-1/2 max-lg:w-full text-white max-lg:text-sm">Welcome to Luwi Dental Clinic!</h2>
+            <h1 class="text-primary font-bold text-bold text-[80px] max-lg:text-[24px]">Unique and Healthy Smile</h1>
+            <p class="text-white italic max-lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="" class="btn max-lg:hidden w-1/2 italic font-black bg-primary px-4 py-1 flex flex-row justify-center items-center gap-3"><span>Get a treatment plan</span><span><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0318 0.546559L15.4097 5.92442L16.4853 6.99999L15.4097 8.07556L10.0318 13.4534L8.95628 12.3779L13.5736 7.76054L0.275263 7.76053V6.23945L13.5736 6.23945L8.95628 1.62213L10.0318 0.546559Z" fill="black"/>
+</svg>
+</span></a>
+          </div>
+          <div class="w-1/2 lg:relative absolute max-lg:right-[-80px] max-lg:w-[80%] bottom-[-10px]">
+            <div class="swiper swiper-hero">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                  <img src="img/hero/image.png" alt="hero image">                
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/hero/image.png" alt="hero image">                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    <!--Hero  -->
+  <!-- about -->
+  <div class="flex flex-row gap-10 relative justify-between max-lg:flex-col">
+    <div class="bg-[url('img/about/absolute.png')] absolute right-0 bottom-0 w-[299px] h-[472px] max-lg:w-[208px] max-lg:h-[326px] bg-contain bg-no-repeat"></div>
+    <div class="w-1/3 max-lg:w-full -translate-y-10 max-lg:translate-y-0"><img src="img/about/left.png" alt=""></div>
+    <div class="flex flex-col gap-8 pt-28 w-1/3 max-lg:w-full max-lg:pt-0 max-lg:px-3">
+      <div class="font-extralight text-lg">Doğa ile iç içe bir tedavi merkezi!</div>
+      <h4 class="font-bold text-[32px] max-lg:text-lg ">Welcome to Luwi Dental Clinic!</h4>
+      <p class="font-extrabold italic text-base">In 2013, our initial dental clinic was established in Antalya. In order to enhance our services, we launched our second clinic in 2014. Luwi Dental Clinic is our latest and independent branch which provides an exceptional experience for you. Our clinic has twelve advanced facilities with experienced dental professionals dedicated to giving you the smile you want. We specialize in various dental procedures using advanced technology like Panoramic X-ray for diagnosis and 3D milling of crowns.
+</p>
+<p class="font-extrabold italic text-base">Our dental clinic has a UK-based branch that offers patients initial consultations and essential information about their procedures. Moreover, our patients can utilize after-care services if needed. Additionally, we collaborate with a dental imaging center where patients can undergo X-rays and 3D tomographic scans. The center sends the results to us, enabling accurate planning and execution of necessary procedures.</p>
+ <a href="" class="btn max-lg:hidden w-1/2 italic font-black bg-primary px-4 py-1 flex flex-row justify-center items-center gap-3"><span>Get a treatment plan</span><span><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0318 0.546559L15.4097 5.92442L16.4853 6.99999L15.4097 8.07556L10.0318 13.4534L8.95628 12.3779L13.5736 7.76054L0.275263 7.76053V6.23945L13.5736 6.23945L8.95628 1.62213L10.0318 0.546559Z" fill="black"/>
+</svg>
+</span></a>
+    </div>
+    <div class="w-1/4 max-lg:w-full mt-9"><img src="img/about/right.png" alt=""></div>
+  </div>
+  <!-- about -->
+    <!-- slider about -->
+        <section class="my-5">
+          <div class="container">
+            <div class="flex flex-col gap-2 justify-center items-center text-center mb-8">
+              <h3 class="second-font text-[23px] font-bold text-secondary">Lorem idfpsum dolor sit.</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+<div class="swiper swiper-about-swiper">
+	<div class="swiper-wrapper">
+			<div class="swiper-slide"> 
+      <a href="" class="">
+      <img src="/img/slider/slider2.jpg" class="relative object-cover h-[500px] max-lg:w-full " alt="">      
+      <div class="absolute bottom-0 w-full ">
+<div class="flex flex-col gap-2 items-center bg-white/70 pt-4">
+  <h3 class="mx-8 third-font text-[23px] font-bold text-center">Zipline</h3>
+  <p class="text-center  text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <a href="" class="btn btn-primary max-lg:hidden text-[18px]  w-full text-white rounded-none uppercase bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary border-none">Bizimle iletişime geçin</a>
+</div>
+      </div>         
+      </a>
+		</div>
+			<div class="swiper-slide"> 
+      <a href="" class="">
+      <img src="/img/slider/slider2.jpg" class="relative object-cover h-[500px] max-lg:w-full " alt="">      
+      <div class="absolute bottom-0 w-full ">
+<div class="flex flex-col gap-2 items-center bg-white/70 pt-4">
+  <h3 class="mx-8 third-font text-[23px] font-bold text-center">Zipline</h3>
+  <p class="text-center  text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <a href="" class="btn btn-primary max-lg:hidden text-[18px]  w-full text-white rounded-none uppercase bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary border-none">Bizimle iletişime geçin</a>
+</div>
+      </div>         
+      </a>
+		</div>
+			<div class="swiper-slide"> 
+      <a href="" class="">
+      <img src="/img/slider/slider2.jpg" class="relative object-cover h-[500px] max-lg:w-full " alt="">      
+      <div class="absolute bottom-0 w-full ">
+<div class="flex flex-col gap-2 items-center bg-white/70 pt-4">
+  <h3 class="mx-8 third-font text-[23px] font-bold text-center">Zipline</h3>
+  <p class="text-center  text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <a href="" class="btn btn-primary max-lg:hidden text-[18px]  w-full text-white rounded-none uppercase bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary border-none">Bizimle iletişime geçin</a>
+</div>
+      </div>         
+      </a>
+		</div>
+			<div class="swiper-slide"> 
+      <a href="" class="">
+      <img src="/img/slider/slider2.jpg" class="relative object-cover h-[500px] max-lg:w-full " alt="">      
+      <div class="absolute bottom-0 w-full ">
+<div class="flex flex-col gap-2 items-center bg-white/70 pt-4">
+  <h3 class="mx-8 third-font text-[23px] font-bold text-center">Zipline</h3>
+  <p class="text-center  text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <a href="" class="btn btn-primary max-lg:hidden text-[18px]  w-full text-white rounded-none uppercase bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary border-none">Bizimle iletişime geçin</a>
+</div>
+      </div>         
+      </a>
+		</div>
+	</div>
+	<div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+            <hr>
+          </div>
+        </section>
+    <!-- slider about -->
+
+<!-- video -->
+<section>
+  <div class="container relative">
+       <div class="gallery">
+    <a href="https://youtu.be/LJp3OJ0g_OY?si=B2ZQOA6lSx5to35c" data-fancybox="gallery" class="relative flex justify-center items-center">
+      <img src="img/slider/bg_1.webp" class="w-full flex justify-center items-center max-lg:h-[250px] object-cover" alt="">
+      <div class=" absolute ">
+     <svg class="h-32 w-32 text-green-500  "  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+</svg>
+</div>
+
+</div>
+  <a href="" class="px-6 bg-primary/80 text-white py-4 absolute left-0 bottom-0 z-10 uppercase hover:bg-secondary transition-all easy-out duration-300 " >Lorem, ipsum dolor.</a>
+    </a>
+  </div>
+</section>
+<!-- video -->
+    <div class="bg-[url('/img/footer/footerbg.webp')]  bg-no-repeat bg-cover" >
+      <footer class="py-10 text-base-content container">
+        <div class="flex flex-col gap-2">
+          <div class="footer justify-between max-lg:justify-center max-lg:items-center max-lg:text-center">
+        <aside class="max-lg:justify-items-center">
+          <a href="">
+       <img src="img/logo/footerlogo.png" class="w-[200px] max-lg:w-full" alt="footer logo">
+       </a>
+          <h4 class="text-[28px] pb-4 fond-bold third-font pt-3">Göynük Canyon</h4>
+          <p class="pb-6 w-60">Türkiye’nın eşsiz doğa güzelliği Göynük Kanyonu Kemer Antalya bölgesinde kurulu Türkiye’nin ilk ve en büyük macera parkıdır.
+</p>
+<a href="" class="btn  px-4 bg-primary text-white py-4  uppercase hover:bg-secondary transition-all easy-out duration-300 ">Bizimle İletişime Geçin</a>
+        </aside>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <h6 class="text-2xl third-font">Menü</h6>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Anasayfa</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Turlar</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">S.S.S</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Galeri</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">İletişim</a>
+        </nav>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <h6 class="text-2xl third-font">Turlar</h6>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Zipline Turu</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Kanyon Bot Tur</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Kanyon Safari</a>
+        </nav>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <h6 class="text-2xl third-font">iletişim</h6>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-sm w-52">Beldibi Mah, Çomaklar Mevkii, No:73 Göynük Kanyonu 07982 Kemer/Antalya</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base  flex gap-1 flex-row"><span><svg class="h-6 w-6 text-slate-900"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="3" y="5" width="18" height="14" rx="2" />  <polyline points="3 7 12 13 21 7" /></svg></span><span> info@goynukcanyon.com</span></a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base flex gap-1 flex-row"><span><svg class="h-6 w-6 text-slate-900"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg></span><span> +90 850 307 33 03</span></a>
+        </nav>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12798.650829821678!2d30.534099!3d36.68261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b89ecfa4f447%3A0xc5ec08ed64f2f2cc!2zR8O2eW7DvGsgS2FueW9udQ!5e0!3m2!1str!2str!4v1712317263642!5m2!1str!2str" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="flex flex-row gap-2 justify-center items-center mx-auto mt-3">
+            <a href=""><svg class="h-8 w-8 text-black bg-white shadow-lg p-1 rounded-lg hover:text-primary transition-all duration-300 easy-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"></path>
+                      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg></a>
+            <a href=""><svg class="h-8 w-8 text-black bg-white shadow-lg p-1 rounded-lg hover:text-primary transition-all duration-300 easy-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"></path>
+                      <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                    </svg></a>
+          </div>
+        </nav>
+        </div>
+        <div class="flex justify-between  items-center my-6 max-lg:flex-col">
+          <div class="max-lg:text-center">© Copyright 2024 Göynük Canyon Tüm Hakları Saklıdır</div>
+          <a href="https://moonworkshop.com/">
+            <img src="https://moonworkshop.com/img/dijital-reklam-ajansi/moonworkshop_black.png" alt="">
+          </a>
+        </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- special adding -->
+    <!-- wp start-->
+    <div>
+      <div class="" id="">
+        <div class="whatsapp-main">
+          <div
+            type="floating"
+            class="whatsapp-wrapper hide-whatsapp"
+            style="width: 360px"
+          >
+            <div
+              color="rgb(29, 33, 41)"
+              role="button"
+              tabindex="0"
+              class="close_whatsapp"
+            ></div>
+            <div class="whatsapp-header">
+              <div size="52" class="support-avatar">
+                <div class="avatar-wrapper">
+                  <div
+                    class="avatar-img"
+                    style="
+                      background-image: url(https://ozaytarim.moonsunum.com/upload/settings/logo-1.webp);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="header-info">
+                <div class="whatsapp-name">OZAY GROUP TARIM</div>
+                <div class="whatsapp-reply-time">Çevrimiçi</div>
+              </div>
+            </div>
+            <div class="whatsapp-background">
+              <div class="whatsapp-message-container">
+                <div class="loading-animation">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="whatsapp-message-wrapper">
+                  <div class="chat-body-wrapper">
+                    <div class="whatsapp-chat-name">OZAY GROUP TARIM</div>
+                    <div class="whatsapp-chat-message">
+                      <div>
+                        <p>deneme</p>
+                      </div>
+                    </div>
+                    <div class="whatsapp-chat-time">16:54</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/902425027007?text=deneme"
+              title="WhatsApp"
+              class="whatsapp-btn"
+              role="button"
+              target="popup"
+              onclick="window.open('https://wa.me/902425027007?text=deneme','popup','width=700,height=600'); return false;"
+            >
+              <svg
+                class="whatsapp-send-icon-small"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1"
+                height="20"
+                viewBox="0 0 90 90"
+              >
+                <path
+                  d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+                  fill="#FFF"
+                />
+              </svg>
+              <span class="chat-button-text">Whatsapp Sohbet</span>
+            </a>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <headers>
+      <a
+        style="background-color: #122e5c"
+        href="tel:902425027007"
+        class="callnow"
+      >
+        <i
+          class="fas fa-phone-alt"
+          style="padding-right: 5px; transform: rotate(0deg)"
+        ></i>
+        HEMEN ARA
+      </a>
+      <div class="whatsappx">
+        <div class="whatsapp-popup-button play-btn" id="whatsapp-popup">
+          <div class="whatsapp-button-main">WHATSAPP</div>
+        </div>
+      </div>
+    </headers>
+    <!-- wp end-->
+
+    <!-- special adding -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

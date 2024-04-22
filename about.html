@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goynuk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  </head>
+  <body>
+    <!-- Navbar Section Start bg-white -->
+    <div
+      class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-white sticky shadow-none"
+    >
+      <div class="container relative max-sm:px-4">
+      
+        <div class="relative -mx-4 flex items-start justify-end pr-4 max-lg:pr-0">
+            <div class="px-4 absolute top-0 left-14 max-lg:hidden">
+            <a href="index.html" class="navbar-logo block w-[100px] py-0">
+              <img
+                src="img/logo/logo.png"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col max-lg:flex-col">
+            <div class="bg-secondary text-white">
+              <div class="flex flex-row justify-between items-center">
+                <a href="" class="pl-6 hover:text-primary transition-all duration-300 easy-out max-sm:text-[14px]">+90 850 307 33 03</a>
+                <a href="" class=" hover:text-primary transition-all duration-300 easy-out max-lg:hidden">info@goynukcanyon.com</a>
+                <div class="flex flex-row gap-2 items-center">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 max-sm:hidden"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="max-sm:text-[12"> 09.00 - 18.00</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-2">
+                  <div class="flex flex-row  gap-2  max-lg:hidden">
+                    <a target="_blank" href="">
+                    <svg
+                      class="h-6 w-6 text-white hover:text-primary transition-all duration-300 easy-out"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                      />
+                    </svg>
+                    </a>
+                    <a href="" target="_blank">
+                    <svg
+                      class="h-6 w-6 text-white hover:text-primary transition-all duration-300 easy-out"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <rect x="4" y="4" width="16" height="16" rx="4" />
+                      <circle cx="12" cy="12" r="3" />
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                    </a>
+                  </div>
+                  <div class="flex items-center justify-end pr-16 max-lg:pr-0 max-lg:py-3">
+                    <div class="">
+                      <div class="dropdown">
+                        <button
+                          onclick="openLangMenu()"
+                          class="dropdown-button rounded py-2 px-6 max-md:p-0 text-base border-none cursor-pointer flex flex-row items-center justify-center gap-2 font-semibold"
+                        >
+                          <img
+                            src="img/lang/tr.svg"
+                            class="h-4 aspect-video object-cover pointer-events-none"
+                          />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-5 h-5 pointer-events-none"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+                            ></path>
+                          </svg>
+                        </button>
+                        <div
+                          id="dropdown"
+                          class="dropdown-content [&.show]:block translate-y-2 rounded hidden absolute bg-[#f1f1f1] w-[150px]  max-lg:w-[150px] right-2 overflow-auto shadow-xl z-10"
+                        >
+                          <a
+                            href=""
+                            class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-[#ddd] font-semibold"
+                          >
+                            <img
+                              src="img/lang/en.svg"
+                              class="h-4 aspect-video object-cover"
+                              alt="English"
+                            />
+                            English
+                          </a>
+                          <a
+                            href=""
+                            class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-[#ddd] font-semibold"
+                          >
+                            <img
+                              src="img/lang/ru.svg"
+                              class="h-4 aspect-video object-cover"
+                              alt="Русский"
+                            />Русский
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full items-center justify-center relative">
+              <div>
+                <div class="max-lg:flex flex-row hidden justify-center items-center">
+                  <a href="/">
+                    <img src="img/logo/xsa.png" class="max-lg:w-[60%]" alt="logo-mobile">
+                  </a>
+                  <a href="/"> <img src="img/logo/xsax.png" class="max-lg:w-[60%] " alt="logo-mobile"></a>
+                <button
+                  id="navbarToggler"
+                  class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                >
+                  <span
+                    class="relative my-[6px] block h-[2px] w-[30px] bg-black"
+                  ></span>
+                  <span
+                    class="relative my-[6px] block h-[2px] w-[30px] bg-black"
+                  ></span>
+                  <span
+                    class="relative my-[6px] block h-[2px] w-[30px] bg-black"
+                  ></span>
+                </button>
+                </div>
+                <nav
+                  id="navbarCollapse"
+                  class=" absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white  shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent py-0 lg:shadow-none "
+                >
+                  <div class="block lg:flex 2xl:ml-20">
+                    <div class=" relative flex justify-center items-center">
+                      <a
+                        href="#home"
+                        class="ud-menu-scroll    transition-all duration-300 easy-out  hover:bg-secondary border-r border-secondary max-lg:border-none uppercase flex py-2 text-sm font-bold text-dark  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 hover:text-white  xl:px-8"
+                      >
+                        Anasayfa
+                      </a>
+                    </div>
+                    <div class="submenu-item group flex max-lg:flex-col justify-center items-center relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative border-r   max-lg:border-none  max-lg:border-none   transition-all duration-300 easy-out hover:bg-secondary border-secondary uppercase flex items-center justify-center py-2 text-sm font-bold font-medium text-dark  lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-black hover:text-white  xl:px-5"
+                      >
+                        Göynük Canyon
+
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu  relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="Gallery.html"
+                          class="block rounded max-lg:flex  max-lg:justify-center max-lg:items-center  transition-all duration-300 easy-out hover:bg-secondary max-lg:bg-secondary max-lg:text-white px-4 py-[10px] hover:text-white text-sm text-body-color "
+                        >
+                          Hakkımızda
+                        </a>
+                      </div>
+                    </div>
+                    <div class=" relative flex justify-center items-center">
+                      <a
+                        href="#pricing"
+                        class="ud-menu-scroll   max-lg:border-none  transition-all duration-300 easy-out hover:bg-secondary uppercase border-r border-secondary flex justify-center items-center py-2 text-sm font-bold font-medium text-dark hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-black lg:group-hover:text-white  xl:px-8"
+                      >
+                        Turlar
+                      </a>
+                    </div>
+                    <div class=" relative flex justify-center items-center">
+                      <a
+                        href="#team"
+                        class="ud-menu-scroll   max-lg:border-none transition-all duration-300 easy-out hover:bg-secondary uppercase border-r border-secondary flex justify-center items-center py-2 text-sm font-bold font-medium text-dark hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-black lg:group-hover:text-white  xl:px-8"
+                      >
+                        S.S.S
+                      </a>
+                    </div>
+                    <div class=" relative flex justify-center items-center">
+                      <a
+                        href="#contact"
+                        class="ud-menu-scroll  max-lg:border-none  transition-all duration-300 easy-out hover:bg-secondary uppercase border-r border-secondary flex justify-center items-center py-2 text-sm font-bold font-medium text-dark hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-black lg:group-hover:text-white  xl:px-8"
+                      >
+                        Galeri
+                      </a>
+                    </div>
+                    <div class=" relative flex justify-center items-center">
+                      <a
+                        href="blog-grids.html"
+                        class="ud-menu-scroll  max-lg:border-none  transition-all duration-300 easy-out hover:bg-secondary uppercase flex justify-center items-center py-2 text-sm font-bold font-medium text-dark hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-black lg:group-hover:text-white lg:group-hover:opacity-white  xl:px-8"
+                      >
+                        İletişim
+                      </a>
+                    </div>
+                    <div class=" relative flex justify-center items-center bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary">
+                      <a
+                        href="blog-grids.html"
+                        class="ud-menu-scroll text-white uppercase flex justify-center items-center text-center py-2 text-base font-bold font-medium hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-2 lg:text-white lg:group-hover:text-white  xl:px-4 max-lg:hover:bg-primary"
+                      >
+                        Bizimle iletişime <br> Geç
+                      </a>
+                    </div>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Navbar Section End  bg-white -->
+<!-- about page title -->
+<div class="bg-[url('/img/bread.webp')]  bg-no-repeat bg-cover relative">
+  <h1 class=" text-center text-white text-[45px] font-bold py-10 z-10 relative">Hakkımızda</h1>
+  <div class="bg-black/40 left-0 right-0 bottom-0 top-0 absolute "></div>
+</div>
+<!-- about page title -->
+<!-- about -->
+<section class="my-10">
+<div class="container">
+  <div class="flex flex-row justify-center  gap-4 max-lg:flex-col">
+    <div class="flex flex-col ">
+      <h2 class="text-[28px] border-blue-500/70 border-b mb-8 border-b-2 pb-2 uppercase">GOYNUK KANYON</h2>
+<div class="flex flex-col">
+  <a href="" class=" border-secondary border-b-2 pb-2 flex flex-row justify-between text-secondary"><span>Hakkımızda</span><span><svg class="h-6 w-6 text-slate-900 "  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+</svg>
+</span></a>
+</div>
+    </div>
+    <div class="flex flex-col">
+            <h2 class="text-[40px] border-blue-500/70 border-b mb-8 border-b-2 pb-2 uppercase">Hakkımızda</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LJp3OJ0g_OY?si=JYHPmhRIlmgqUX1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</section>
+<!-- about -->
+
+
+    <div class="bg-[url('/img/footer/footerbg.webp')]  bg-no-repeat bg-cover" >
+      <footer class="py-10 text-base-content container">
+        <div class="flex flex-col gap-2">
+          <div class="footer justify-between max-lg:justify-center max-lg:items-center max-lg:text-center">
+        <aside class="max-lg:justify-items-center">
+          <a href="">
+       <img src="img/logo/footerlogo.png" class="w-[200px] max-lg:w-full" alt="footer logo">
+       </a>
+          <h4 class="text-[28px] pb-4 fond-bold third-font pt-3">Göynük Canyon</h4>
+          <p class="pb-6 w-60">Türkiye’nın eşsiz doğa güzelliği Göynük Kanyonu Kemer Antalya bölgesinde kurulu Türkiye’nin ilk ve en büyük macera parkıdır.
+</p>
+<a href="" class="btn  px-4 bg-primary text-white py-4  uppercase hover:bg-secondary transition-all easy-out duration-300 ">Bizimle İletişime Geçin</a>
+        </aside>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <h6 class="text-2xl third-font">Menü</h6>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Anasayfa</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Turlar</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">S.S.S</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Galeri</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">İletişim</a>
+        </nav>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <h6 class="text-2xl third-font">Turlar</h6>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Zipline Turu</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Kanyon Bot Tur</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base uppercase">Kanyon Safari</a>
+        </nav>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <h6 class="text-2xl third-font">iletişim</h6>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-sm w-52">Beldibi Mah, Çomaklar Mevkii, No:73 Göynük Kanyonu 07982 Kemer/Antalya</a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base  flex gap-1 flex-row"><span><svg class="h-6 w-6 text-slate-900"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="3" y="5" width="18" height="14" rx="2" />  <polyline points="3 7 12 13 21 7" /></svg></span><span> info@goynukcanyon.com</span></a>
+          <a href="" class="text-black hover:text-secondary transition-all duration-300 easy-out text-base flex gap-1 flex-row"><span><svg class="h-6 w-6 text-slate-900"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg></span><span> +90 850 307 33 03</span></a>
+        </nav>
+        <nav class="max-lg:justify-items-center max-lg:mx-auto">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12798.650829821678!2d30.534099!3d36.68261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b89ecfa4f447%3A0xc5ec08ed64f2f2cc!2zR8O2eW7DvGsgS2FueW9udQ!5e0!3m2!1str!2str!4v1712317263642!5m2!1str!2str" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="flex flex-row gap-2 justify-center items-center mx-auto mt-3">
+            <a href=""><svg class="h-8 w-8 text-black bg-white shadow-lg p-1 rounded-lg hover:text-primary transition-all duration-300 easy-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"></path>
+                      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg></a>
+            <a href=""><svg class="h-8 w-8 text-black bg-white shadow-lg p-1 rounded-lg hover:text-primary transition-all duration-300 easy-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"></path>
+                      <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                    </svg></a>
+          </div>
+        </nav>
+        </div>
+        <div class="flex justify-between  items-center my-6 max-lg:flex-col">
+          <div class="max-lg:text-center">© Copyright 2024 Göynük Canyon Tüm Hakları Saklıdır</div>
+          <a href="https://moonworkshop.com/">
+            <img src="https://moonworkshop.com/img/dijital-reklam-ajansi/moonworkshop_black.png" alt="">
+          </a>
+        </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- special adding -->
+    <!-- wp start-->
+    <div>
+      <div class="" id="">
+        <div class="whatsapp-main">
+          <div
+            type="floating"
+            class="whatsapp-wrapper hide-whatsapp"
+            style="width: 360px"
+          >
+            <div
+              color="rgb(29, 33, 41)"
+              role="button"
+              tabindex="0"
+              class="close_whatsapp"
+            ></div>
+            <div class="whatsapp-header">
+              <div size="52" class="support-avatar">
+                <div class="avatar-wrapper">
+                  <div
+                    class="avatar-img"
+                    style="
+                      background-image: url(https://ozaytarim.moonsunum.com/upload/settings/logo-1.webp);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="header-info">
+                <div class="whatsapp-name">OZAY GROUP TARIM</div>
+                <div class="whatsapp-reply-time">Çevrimiçi</div>
+              </div>
+            </div>
+            <div class="whatsapp-background">
+              <div class="whatsapp-message-container">
+                <div class="loading-animation">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="whatsapp-message-wrapper">
+                  <div class="chat-body-wrapper">
+                    <div class="whatsapp-chat-name">OZAY GROUP TARIM</div>
+                    <div class="whatsapp-chat-message">
+                      <div>
+                        <p>deneme</p>
+                      </div>
+                    </div>
+                    <div class="whatsapp-chat-time">16:54</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/902425027007?text=deneme"
+              title="WhatsApp"
+              class="whatsapp-btn"
+              role="button"
+              target="popup"
+              onclick="window.open('https://wa.me/902425027007?text=deneme','popup','width=700,height=600'); return false;"
+            >
+              <svg
+                class="whatsapp-send-icon-small"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1"
+                height="20"
+                viewBox="0 0 90 90"
+              >
+                <path
+                  d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+                  fill="#FFF"
+                />
+              </svg>
+              <span class="chat-button-text">Whatsapp Sohbet</span>
+            </a>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <headers>
+      <a
+        style="background-color: #122e5c"
+        href="tel:902425027007"
+        class="callnow"
+      >
+        <i
+          class="fas fa-phone-alt"
+          style="padding-right: 5px; transform: rotate(0deg)"
+        ></i>
+        HEMEN ARA
+      </a>
+      <div class="whatsappx">
+        <div class="whatsapp-popup-button play-btn" id="whatsapp-popup">
+          <div class="whatsapp-button-main">WHATSAPP</div>
+        </div>
+      </div>
+    </headers>
+    <!-- wp end-->
+
+    <!-- special adding -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

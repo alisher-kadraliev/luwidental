@@ -151,6 +151,25 @@ let swiperVideo = new Swiper(".swiper-video", {
     },
   },
 });
+let swiperTestimonial = new Swiper(".swiper-testimonials", {
+  spaceBetween: 20,
+  loop: false,
+  pagination: {
+    el: ".custom-pagination", // Use your custom pagination selector
+    clickable: true, // Enable bullet click
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+  },
+});
 // swiper
 
 // whatsapp

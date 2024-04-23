@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuwiDental</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+
+<body>
+  <!-- Navbar Section Start bg-transparent -->
+  <div class="flex flex-row justify-between items-center bg-white container">
+    <a href=""
+      class=" group bg-gradient-to-r from-[#31353A] my-6 px-8 py-3 rounded-xl via-[#30302D] to-[#020203] flex flex-row gap-3 text-white/70 max-lg:bg-none max-lg:text-black max-lg:p-0 max-lg:my-4 max-lg:font-bold"><span><svg
+          width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="group-hover:fill-primary transition duration-300 ease-in-out max-lg:fill-black"
+            fill-rule="evenodd" clip-rule="evenodd"
+            d="M14.2549 15.1055C14.1024 15.26 13.948 15.4166 13.7903 15.5758C11.0338 14.0432 8.92608 11.9319 7.41592 9.25483C7.61606 9.04832 7.81334 8.84825 8.00738 8.65146C8.43285 8.21996 8.84278 7.80423 9.2332 7.37107C9.9901 6.53134 10.0128 5.31859 9.2641 4.48074C8.73823 3.89233 8.17771 3.33425 7.6175 2.77646C7.47624 2.63581 7.33499 2.49518 7.19433 2.35409L7.16882 2.3285C6.77915 1.93759 6.38788 1.54509 5.96599 1.19026C5.12249 0.480916 3.91548 0.469263 3.09174 1.20041C2.44129 1.77775 1.83113 2.40126 1.222 3.02373C1.15537 3.09181 1.08875 3.15989 1.02209 3.22789C0.404649 3.85786 0.088218 4.62854 0.0189278 5.5068C-0.0625086 6.53924 0.126356 7.53365 0.441025 8.50676C1.44318 11.6058 3.23667 14.2261 5.43804 16.5887C7.09326 18.3651 8.98801 19.8498 11.1169 21.027C12.8345 21.9768 14.6062 22.7876 16.6006 22.9739C17.6989 23.0764 18.7263 22.8915 19.5795 22.1594C19.9619 21.8313 20.3131 21.467 20.6642 21.1028C20.791 20.9713 20.9177 20.8398 21.0459 20.71C21.0695 20.6862 21.093 20.6624 21.1166 20.6386C21.3593 20.3933 21.6028 20.1473 21.8231 19.8829C22.5277 19.0376 22.5228 17.8148 21.7832 16.9992C21.3051 16.4718 20.7998 15.9684 20.2948 15.4653C20.1809 15.3518 20.0669 15.2383 19.9533 15.1245C19.8689 15.04 19.7847 14.9551 19.7005 14.8702C19.3055 14.4717 18.9099 14.0727 18.4858 13.7072C17.9325 13.2303 17.2731 13.0906 16.5523 13.2735C16.0447 13.4022 15.6501 13.7055 15.2907 14.0626C14.9467 14.4043 14.6061 14.7495 14.2549 15.1055ZM1.91739 8.59203C1.61757 7.7565 1.37144 6.90738 1.37503 5.89524C1.33211 5.17725 1.63092 4.49334 2.23577 3.92239C2.56375 3.61282 2.88152 3.29258 3.1993 2.97233C3.37165 2.79864 3.544 2.62495 3.71799 2.45295C4.29497 1.88263 4.7895 1.882 5.36182 2.45113C6.23339 3.3178 7.10383 4.18559 7.97289 5.05476C8.60732 5.68936 8.61003 6.11534 7.97616 6.74662C7.46136 7.25936 6.94046 7.76603 6.41785 8.27081C5.96901 8.70443 5.89154 9.10415 6.14258 9.66921C6.7458 11.027 7.6506 12.1759 8.65131 13.2564C9.75901 14.4524 10.9823 15.5132 12.3934 16.3452C12.6865 16.518 12.991 16.6723 13.2949 16.8262L13.3342 16.8461C13.8006 17.0826 14.2419 17.0099 14.6278 16.6307C14.9787 16.2858 15.3271 15.9385 15.6755 15.5912C15.8636 15.4037 16.0517 15.2161 16.2402 15.029C16.251 15.0183 16.2617 15.0076 16.2725 14.9968C16.3384 14.9311 16.4045 14.8651 16.477 14.8072C16.9072 14.4637 17.351 14.4746 17.747 14.8595C18.218 15.3173 18.6825 15.7815 19.1471 16.2458C19.295 16.3935 19.4428 16.5413 19.5909 16.6888C19.6807 16.7783 19.7709 16.8674 19.8611 16.9565C20.1284 17.2205 20.3957 17.4847 20.6527 17.7583C21.0793 18.2124 21.0998 18.6823 20.6771 19.1361C20.0665 19.7916 19.4408 20.435 18.7925 21.0534C18.2631 21.5584 17.5885 21.6899 16.8756 21.6394C15.4622 21.5392 14.1663 21.0439 12.9108 20.4335C10.0515 19.0434 7.61139 17.1151 5.57051 14.6898C4.02561 12.8539 2.73232 10.863 1.91739 8.59203Z"
+            fill="#D8D8D8" />
+        </svg>
+      </span><span class="group-hover:text-primary">+90 501 161 15 66</span></a>
+    <div class="flex flex-row gap-6 max-lg:hidden">
+      <div class="text-gray-600/80 font-extrabold italic">Follow us our Social Media</div>
+      <a href="" class="group">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_0_2244" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="23"
+            height="22">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00012207H22.5316V21.9999H0V0.00012207Z"
+              fill="white" />
+          </mask>
+          <g mask="url(#mask0_0_2244)">
+            <path class="group-hover:fill-primary transition duration-300 ease-in-out"
+              d="M21.2876 0.00012207H1.24401C0.555911 0.00012207 0 0.542917 0 1.21478V20.7855C0 21.4556 0.555911 22.0001 1.24401 22.0001H12.0345V13.4798H9.09739V10.1594H12.0345V7.71241C12.0345 4.86937 13.8127 3.32231 16.4075 3.32231C17.6515 3.32231 18.7199 3.41248 19.0314 3.45315V6.42349H17.2314C15.819 6.42349 15.5456 7.07944 15.5456 8.0395V10.1594H18.9137L18.4754 13.4798H15.5456V22.0001H21.2876C21.9739 22.0001 22.5316 21.4556 22.5316 20.7855V1.21478C22.5316 0.542917 21.9739 0.00012207 21.2876 0.00012207"
+              fill="#4b5563cc" />
+          </g>
+        </svg>
+      </a>
+      <a href="" class="group"><svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_0_2247" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+            height="22">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.682617 0H23.2139V22H0.682617V0Z" fill="white" />
+          </mask>
+          <g mask="url(#mask0_0_2247)">
+            <path class="group-hover:fill-primary transition duration-300 ease-in-out" fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16.4328 0C18.2436 0 19.9476 0.687776 21.2278 1.93956C22.508 3.18958 23.2142 4.85333 23.2142 6.62139V15.3786C23.2142 17.1467 22.508 18.8104 21.2278 20.0604C19.9476 21.3105 18.2436 22 16.4328 22H7.46401C5.65141 22 3.94927 21.3105 2.66905 20.0604C1.38701 18.8104 0.682617 17.1467 0.682617 15.3786V6.62139C0.682617 4.85333 1.38701 3.18958 2.66905 1.93956C3.94927 0.687776 5.65141 0 7.46401 0H16.4328ZM16.4328 20.1842C19.1472 20.1842 21.3545 18.0289 21.3545 15.3786V6.62139C21.3545 3.97107 19.1472 1.8158 16.4328 1.8158H7.46401C4.74964 1.8158 2.54229 3.97107 2.54229 6.62139V15.3786C2.54229 18.0289 4.74964 20.1842 7.46401 20.1842H16.4328Z"
+              fill="#4b5563cc" />
+          </g>
+          <path class="group-hover:fill-primary transition duration-300 ease-in-out" fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.19922 10.9998C6.19922 14.0957 8.77778 16.6134 11.9485 16.6134C15.1191 16.6134 17.6977 14.0957 17.6977 10.9998C17.6977 7.90395 15.1191 5.38623 11.9485 5.38623C8.77778 5.38623 6.19922 7.90395 6.19922 10.9998ZM8.0589 10.9998C8.0589 8.90644 9.80449 7.20203 11.9485 7.20203C14.0924 7.20203 15.838 8.90644 15.838 10.9998C15.838 13.0932 14.0924 14.7976 11.9485 14.7976C9.80449 14.7976 8.0589 13.0932 8.0589 10.9998Z"
+            fill="#4b5563cc" />
+          <path class="group-hover:fill-primary transition duration-300 ease-in-out"
+            d="M18.9759 5.21609C18.9759 5.81193 18.4816 6.29461 17.8713 6.29461C17.2629 6.29461 16.7686 5.81193 16.7686 5.21609C16.7686 4.62025 17.2629 4.13757 17.8713 4.13757C18.4816 4.13757 18.9759 4.62025 18.9759 5.21609"
+            fill="#4b5563cc" />
+        </svg>
+      </a>
+      <a href="" class="group"><svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="group-hover:fill-primary transition duration-300 ease-in-out" fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M28.1709 0.656243C29.5139 1.01791 30.572 2.08278 30.9313 3.43491C31.5839 5.88606 31.5839 11 31.5839 11C31.5839 11 31.5839 16.1139 30.9313 18.5651C30.572 19.9172 29.5139 20.9821 28.1709 21.3438C25.7356 22 15.9706 22 15.9706 22C15.9706 22 6.20567 22 3.77037 21.3438C2.42739 20.9821 1.36923 19.9172 1.01001 18.5651C0.357422 16.1139 0.357422 11 0.357422 11C0.357422 11 0.357422 5.88606 1.01001 3.43491C1.36923 2.08278 2.42739 1.01791 3.77037 0.656243C6.20567 0 15.9706 0 15.9706 0C15.9706 0 25.7356 0 28.1709 0.656243ZM20.9382 11L12.7772 6.3569V15.6431L20.9382 11Z"
+            fill="#4b5563cc" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="bg-[url('img/hero/bg.jpg')] bg-cover relative">
+    <div class="ud-header flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-72 max-w-full px-4 max-lg:px-0">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img src="img/logo/image.png" alt="logo" class="header-logo w-full" />
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+              </button>
+              <nav id="navbarCollapse"
+                class="absolute right-4 top-full z-50 max-lg:overflow-scroll hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg  lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none  xl:px-6">
+                <ul class="blcok lg:flex 2xl:ml-20 ">
+                  <li class="group relative">
+                    <a href="#home"
+                      class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70">
+                      Home
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a href="#about"
+                      class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10">
+                      About Us
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a href="javascript:void(0)"
+                      class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10">
+                      SERVICES
+
+                      <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                      </svg>
+                    </a>
+                    <div
+                      class="submenu relative left-0 z-50 top-full hidden w-full rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="about.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        About Page
+                      </a>
+                      <a href="pricing.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        Pricing Page
+                      </a>
+                      <a href="contact.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        Contact Page
+                      </a>
+                      <a href="blog-grids.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        Blog Grid Page
+                      </a>
+                      <a href="blog-details.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        Blog Details Page
+                      </a>
+                      <a href="signup.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        Sign Up Page
+                      </a>
+                      <a href="signin.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        Sign In Page
+                      </a>
+                      <a href="404.html"
+                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                        404 Page
+                      </a>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <a href="blog-grids.html"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10">
+                      SMILE GALLERY
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a href="#contact"
+                      class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-medium text-white max-lg:text-[#000!important] group-hover:text-primary  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center justify-end pr-16 lg:pr-0">
+              <div class="">
+                <div class="dropdown border rounded-full">
+                  <button onclick="openLangMenu()"
+                    class="dropdown-button group italic text-white hover:text-primary rounded py-2 px-4 text-base border-none cursor-pointer flex flex-row items-center justify-center gap-2 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 group-hover:text-primary pointer-events-none max-lg:hidden" viewBox="0 0 24 24"
+                      fill="currentColor">
+                      <path
+                        d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z">
+                      </path>
+                    </svg>
+
+                    TR
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 pointer-events-none group-hover:fill-primary"
+                      viewBox="0 0 24 24" fill="white">
+                      <path
+                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                      </path>
+                    </svg>
+                  </button>
+                  <div id="dropdown"
+                    class="dropdown-content [&.show]:block translate-y-2 rounded hidden absolute bg-[#f1f1f1] w-[150px] max-w-[260px] overflow-auto shadow-xl z-10">
+                    <a href=""
+                      class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-primary font-semibold">English
+                    </a>
+                    <a href=""
+                      class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-primary font-semibold">Русский
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-[#979797] max-lg:hidden" />
+    <!--Navbar Section End bg-transparent -->
+
+  </div>
+  <!-- thumb page -->
+  <div
+    class="bg-[url('img/slider/image.png')] bg-cover relative bg-center max-lg:bg-none max-lg:shadow-xl border border-b p-7">
+    <div class="bg-primary/80 absolute left-0 right-0 top-0 bottom-0 w-full h-full max-lg:bg-white"></div>
+    <h1
+      class="text-[44px] font-black text-center py-4 max-lg:py-2 relative z-[10] max-lg:text-[30px] after:contnet-[''] flex flex-col justify-center items-center mx-auto after:absolute after:bottom-0 after:w-[100px] after:h-[4px] after:bg-primary ">
+      Hollywood Smile</h1>
+  </div>
+  <!-- thumb page -->
+  <!-- service -->
+  <section class="relative py-10">
+    <div class="container">
+      <div class="flex flex-row gap-10 justify-between max-lg:flex-col">
+        <div class="flex-col gap-6 w-2/3 max-lg:w-full">
+          <img src="img/about/image copy 2.png" class="mb-10" alt="">
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, impedit animi, illum porro voluptatibus
+            voluptatum numquam rem ea sapiente asperiores voluptate placeat quos ipsam? Porro quia ab laborum eveniet,
+            provident consequuntur, assumenda officia blanditiis eaque, accusamus temporibus labore ratione adipisci.
+            Sunt omnis rerum asperiores delectus quia eaque perspiciatis laborum doloribus eius distinctio consectetur
+            quam repellendus illo quaerat alias, vero voluptatibus molestias nulla nisi, fuga est odit perferendis. Nam
+            quam cum sint nihil officiis! Voluptatibus obcaecati magni fugit dolorum reiciendis veritatis quaerat, eum
+            atque culpa! Aspernatur, et beatae. Nam, cum iure odio placeat voluptates minus tenetur temporibus! Suscipit
+            modi excepturi aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit beatae qui
+            ducimus reiciendis. Iusto libero repudiandae voluptate sequi commodi alias ea officia, excepturi fuga
+            officiis atque perferendis veniam eligendi? At non quidem architecto officiis nemo deserunt. Sed incidunt
+            deserunt aperiam deleniti error enim omnis maiores molestias officiis, nihil aut pariatur natus. Voluptate,
+            dolor? Pariatur repudiandae ad obcaecati accusamus, nihil beatae, nesciunt deserunt facilis tenetur eum
+            error unde repellat natus explicabo iste accusantium facere voluptatum, dolorum nobis tempora repellendus
+            iure eaque? Accusantium, laborum. Ad ab, odit dolorum dicta cupiditate corporis nulla, atque culpa fugit
+            dolor suscipit harum, quos minima ex.</div>
+        </div>
+        <div class="flex flex-col gap-5 w-1/3 max-lg:w-full">
+          <h4 class="font-extrabold text-xl">Our Departments</h4>
+          <div class="flex flex-col gap-2 bg-black rounded-lg px-5 lg:sticky lg:top-36 ">
+            <a href="" class="flex flex-row items-center p-6 justify-between text-white">
+              <span>Lorem, ipsum.</span> <span><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 4.13379H8.42982" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M5.75708 1L8.89089 4.13381L5.75708 7.26761" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+            <hr class=" border-b border-white/50">
+            <a href="" class="flex flex-row items-center p-6 justify-between text-white">
+              <span>Lorem, ipsum.</span> <span><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 4.13379H8.42982" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M5.75708 1L8.89089 4.13381L5.75708 7.26761" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- service -->
+  <!-- Form -->
+  <section
+    class="bg-[url('img/service/bg.png')] mt-10 max-lg:mt-0 bg-center bg-cover bg-no-repeat relative py-20 max-lg:py-10">
+    <div class="absolute left-0 top-0 right-0 bottom-0 bg-gradient-to-r from-primary to-[#C4F0E9] opacity-90 z-[-1]">
+    </div>
+    <div class="container">
+      <div class="flex flex-row gap-10">
+        <div class="flex flex-col w-1/2 max-lg:hidden">
+          <h2 class="text-[40px] mb-6"><strong>Bizimle </strong>İletişime Geç</h2>
+          <img src="img/about/image copy 2.png" alt="">
+        </div>
+        <div class="w-1/2 max-lg:w-full">
+          <h1 class="font-bold max-lg:text-xl mb-3 text-secondary relative ">Detaylı bilgi almak için formu doldurun
+          </h1>
+          <div class="flex flex-col gap-5 rounded-lg ">
+            <form action="">
+              <input type="text" placeholder="Ad" class="mb-2 p-4 w-full">
+              <input type="text" placeholder="Soayd" class="mb-2 p-4 w-full">
+              <input type="tel" placeholder="Telefon" class="mb-2 p-4 w-full">
+              <input type="mail" placeholder="E-Mail" class="mb-2 p-4 w-full">
+              <input type="checkbox" checked> <span
+                class="text-md font-extrabold italic opacity-50 underline">Bilgilendirme yazısını okudum. Kampanyalardan
+                haberdar olmak istiyorum.</span>
+              <a href=""
+                class="btn w-1/2 mt-3 max-lg:w-full text-white italic font-black bg-black px-4 py-1 flex flex-row justify-center items-center gap-3"><span>Gönder</span><span>
+                </span></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Form -->
+  <!-- accorditon -->
+  <div class="px-5 bg-white py-10 w-full">
+    <div class="container">
+      <div class="flex flex-col items-center">
+        <h2 class="font-bold text-5xl mt-5 tracking-tight">
+          S.S.S
+        </h2>
+      </div>
+      <div class="grid divide-y divide-neutral-200 mx-auto mt-8">
+        <div class="py-5">
+          <details class="group bg-gray-100 p-4">
+            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+              <span class="font-bold text-center mx-auto"> What is a SAAS platform?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#9AC9C1"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn text-center font-extrabold italic">
+              SAAS platform is a cloud-based software service that allows users to access
+              and use a variety of tools and functionality.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- accorditon -->
+  <div class="bg-primary">
+    <footer class="py-10 text-base-content container">
+      <div class="flex flex-col gap-2">
+        <div class="footer">
+          <aside class="">
+            <a href="">
+              <img src="img/footer/image.png" class="w-[200px]" alt="footer logo">
+            </a>
+            <p class="pb-6 w-60 text-white italic font-extrabold">Türkiye’nın eşsiz doğa güzelliği Göynük Kanyonu Kemer
+              Antalya bölgesinde kurulu
+              Türkiye’nin ilk ve en büyük macera parkıdır.
+            </p>
+            <div class="flex flex-row gap-4 max-lg:hidden">
+              <a href="" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_0_1541" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
+                    height="20">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H19.855V19.9998H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_0_1541)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.7587 0H1.09623C0.489872 0 0 0.49345 0 1.10424V18.8958C0 19.5049 0.489872 20 1.09623 20H10.6048V12.2543H8.01666V9.23571H10.6048V7.01117C10.6048 4.42659 12.1718 3.02017 14.4584 3.02017C15.5546 3.02017 16.4961 3.10215 16.7705 3.13911V5.83943H15.1844C13.9398 5.83943 13.6988 6.43575 13.6988 7.30853V9.23571H16.6668L16.2806 12.2543H13.6988V20H18.7587C19.3635 20 19.855 19.5049 19.855 18.8958V1.10424C19.855 0.49345 19.3635 0 18.7587 0"
+                      fill="white" />
+                  </g>
+                </svg>
+              </a>
+              <a href="" target="_blank">
+                <svg fill="white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M 2.296875 2 C 2.052875 2 1.9117344 2.2756094 2.0527344 2.4746094 L 6.4882812 8.7050781 L 2.0136719 14 L 3.3457031 14 L 7.09375 9.5527344 L 9.9609375 13.580078 C 10.148938 13.844078 10.452391 14 10.775391 14 L 13.703125 14 C 13.947125 14 14.088266 13.724391 13.947266 13.525391 L 9.2753906 6.9628906 L 13.457031 2 L 12.154297 2 L 8.6738281 6.1191406 L 6.0390625 2.4199219 C 5.8510625 2.1559219 5.5476094 2 5.2246094 2 L 2.296875 2 z M 3.6542969 3 L 5.2246094 3 L 12.345703 13 L 10.775391 13 L 3.6542969 3 z">
+                  </path>
+                </svg>
+              </a>
+              <a href="" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" fill="white"
+                  viewBox="0 0 50 50">
+                  <path
+                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </aside>
+          <hr class="bg-white/50 h-full border max-lg:w-full">
+          <nav class="">
+            <h6 class="text-2xl text-white">Menü</h6>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">Anasayfa</a>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">Turlar</a>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">S.S.S</a>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">Galeri</a>
+
+          </nav>
+          <nav class="">
+            <h6 class="text-2xl text-white">Turlar</h6>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">Zipline
+              Turu</a>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">Kanyon
+              Bot Tur</a>
+            <a href=""
+              class="text-white/70 hover:text-secondary transition-all duration-300 easy-out text-base uppercase italic">Kanyon
+              Safari</a>
+          </nav>
+          <hr class="bg-white/50 h-full border max-lg:w-full">
+          <nav class=" text-white">
+            <h6 class="text-2xl">iletişim</h6>
+            <div class="flex flex-row gap-2">
+              <svg width="14" class="mt-1" height="20" viewBox="0 0 14 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.00241 18.3546C7.02964 18.3225 7.05162 18.3005 7.06913 18.2753C8.05197 16.8616 9.05175 15.4595 10.0119 14.0305C10.9296 12.6646 11.7492 11.24 12.3116 9.68226C12.7091 8.58149 12.9428 7.45452 12.7862 6.27588C12.3686 3.13026 9.59004 0.888165 6.43757 1.20801C4.2545 1.42952 2.6744 2.58927 1.71577 4.56434C1.02379 5.99001 1.02872 7.47681 1.46205 8.97957C1.8599 10.3593 2.50948 11.6218 3.24084 12.8456C4.36927 14.7337 5.68917 16.491 6.94526 18.2918C6.95898 18.3115 6.97773 18.3278 7.00241 18.3546V18.3546ZM6.84482 20C6.69503 19.8543 6.51733 19.7282 6.3998 19.5598C5.22497 17.8767 4.04126 16.1993 2.89828 14.4944C1.95306 13.0845 1.12812 11.6033 0.560526 9.99229C0.206119 8.98626 -0.0163139 7.95543 0.000936207 6.88023C0.0492574 3.85998 2.10899 1.14292 4.99979 0.291902C8.82885 -0.835329 12.7669 1.40222 13.7791 5.27976C14.1649 6.75732 14.0165 8.20784 13.5575 9.64129C13.0563 11.2068 12.3015 12.6525 11.4036 14.0164C10.3608 15.6004 9.26358 17.1481 8.19002 18.7116C7.99518 18.9955 7.81192 19.2883 7.60149 19.56C7.47476 19.7237 7.3059 19.8544 7.15595 20H6.84482Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.00083 9.66661C8.46824 9.66613 9.66916 8.46183 9.66661 6.99329C9.66405 5.53562 8.46705 4.33702 7.01015 4.33339C5.54102 4.32971 4.33512 5.52885 4.33339 6.99507C4.33167 8.4629 5.53408 9.66708 7.00083 9.66661M3 6.99751C3.00095 4.79417 4.79803 2.99917 7.00226 3C9.20643 3.00089 11.0008 4.79719 11 7.00196C10.9992 9.20577 9.20215 11.0009 6.9978 11C4.79476 10.9992 2.99905 9.20138 3 6.99751"
+                  fill="white" />
+              </svg>
+              <div class="flex flex-col gap-1">
+                <h6 class="text-base font-extralight">Adres</h6>
+                <a href=""
+                  class="text-white hover:text-secondary transition-all duration-300 easy-out text-sm w-52">Beldibi
+                  Mah, Çomaklar Mevkii, No:73 Göynük Kanyonu 07982 Kemer/Antalya</a>
+              </div>
+            </div>
+            <div class="flex flex-row gap-2">
+              <svg width="16" class="mt-2" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.91163 11.0326L4.98246 11.1058C7.12873 13.2495 9.88536 14.4961 12.5381 14.5126C12.6904 14.3839 12.8356 14.2529 12.9714 14.1183C13.6431 13.4443 14.1625 12.6534 14.512 11.7657C14.5096 11.7279 14.4955 11.6736 14.4778 11.6264C13.433 11.1636 12.5688 10.8921 11.1556 10.577C11.1403 10.5829 11.0931 10.5923 11.0459 10.6041L10.3718 11.6677C9.93022 12.3831 8.74493 12.5023 7.91027 11.892C7.22082 11.3915 6.53255 10.8048 5.86553 10.1496C5.20323 9.4744 4.61531 8.78501 4.10884 8.0909C3.76412 7.61989 3.62363 7.05799 3.72162 6.55039C3.80072 6.15376 4.01912 5.82559 4.34024 5.62727L5.3992 4.9544C5.41101 4.90128 5.42164 4.8399 5.42045 4.80567C5.12531 3.71138 4.70503 2.49078 4.35558 1.51453C4.31544 1.50155 4.27294 1.49211 4.23635 1.48738C3.34974 1.83916 2.55876 2.35975 1.88112 3.03379C1.75007 3.166 1.62021 3.30884 1.48917 3.46584C1.50688 6.08175 2.77362 8.89125 4.91163 11.0326V11.0326ZM12.5889 16C9.53001 16 6.36727 14.5917 3.91169 12.1375L3.86093 12.0832C1.32035 9.52398 -0.071541 6.29541 0.00283471 3.18135L0.00873755 2.93345L0.164572 2.73749C0.386519 2.45654 0.602563 2.20983 0.828051 1.98318C1.66625 1.14741 2.64848 0.507599 3.74759 0.081452C3.8869 0.0271507 4.04628 0 4.21628 0C4.5976 0 5.45941 0.197137 5.68136 0.806256C6.05678 1.84506 6.52665 3.19906 6.87019 4.49402C6.97054 4.86941 6.87255 5.78309 6.3413 6.11952L5.1808 6.85613C5.17608 6.91988 5.19733 7.05917 5.31066 7.21381C5.77462 7.85008 6.31532 8.48399 6.91977 9.09783C7.53249 9.70105 8.14638 10.224 8.78743 10.6903C8.96215 10.8178 9.10146 10.826 9.13452 10.8225C9.14042 10.8225 9.14278 10.8237 9.14632 10.8237L9.88536 9.65855C10.2313 9.11436 11.1049 9.09783 11.2017 9.09783C11.3044 9.09783 11.3965 9.10727 11.4803 9.12616C13.0752 9.48148 14.0268 9.7884 15.2475 10.342C15.813 10.597 16.1695 11.6169 15.9181 12.2568C15.4942 13.3534 14.8555 14.3355 14.0209 15.1713C13.7859 15.405 13.5321 15.6293 13.2618 15.8395L13.067 15.9917L12.5889 16Z"
+                  fill="white" />
+              </svg>
+
+              <div class="flex flex-col gap-1">
+                <h6 class="text-base font-extralight">Telefon</h6>
+                <a href="" class="text-white hover:text-secondary transition-all duration-300 easy-out text-sm w-52">+90
+                  501 161 15 66</a>
+              </div>
+            </div>
+            <div class="flex flex-row gap-2">
+              <svg width="18" class="mt-2" height="12" viewBox="0 0 18 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.885161 11.8542C1.11799 11.9698 1.35042 11.9991 1.59118 11.9991C6.23032 11.9982 10.8694 11.9985 15.5085 11.9983C15.5697 11.9983 15.6325 12.0046 15.6917 11.9932C15.8616 11.9604 16.0301 11.9201 16.2325 11.8755C14.481 10.1429 12.765 8.44539 11.0506 6.74955C10.626 7.17038 10.1889 7.61329 9.73958 8.04348C9.58902 8.18767 9.42172 8.32795 9.23723 8.42095C8.62577 8.72915 7.91285 8.59666 7.41073 8.10224C6.94769 7.64628 6.48755 7.18743 6.04802 6.75159C4.32506 8.45443 2.61092 10.1486 0.885161 11.8542V11.8542ZM0.899318 0.158092C0.932885 0.194152 0.965339 0.23128 1.00011 0.266094C3.36457 2.63372 5.72913 5.0013 8.094 7.36853C8.37887 7.65372 8.71712 7.65381 9.00271 7.36795C11.3677 5.00081 13.7322 2.63323 16.0966 0.265471C16.1329 0.229143 16.1653 0.188943 16.1995 0.150568C16.1967 0.130579 16.1939 0.110635 16.191 0.0906909C15.9577 0.0607745 15.7244 0.00521536 15.491 0.0048147C12.3142 -0.000928192 9.13742 0.000941585 5.96058 0.000941585C4.49739 0.000941585 3.03416 -0.00297604 1.57097 0.00517084C1.34855 0.00637284 1.12645 0.0636236 0.904215 0.0949647C0.902568 0.116022 0.900965 0.137035 0.899318 0.158092V0.158092ZM17.0951 1.30066C17.0479 1.15597 17.0006 1.01124 16.9654 0.903554C15.243 2.60501 13.5223 4.30477 11.7923 6.0137C13.5125 7.71551 15.2289 9.41367 16.9563 11.1226C17.0004 10.9881 17.0477 10.8434 17.0951 10.6987V1.30066ZM0 1.30066C0.0470561 1.15589 0.0941121 1.01111 0.137785 0.876754C1.86546 2.58586 3.58249 4.28451 5.30229 5.98583C3.57604 7.69227 1.85816 9.39043 0.133511 11.0953C0.0986975 10.9918 0.049371 10.8452 0 10.6987C0 7.56602 0 4.43334 0 1.30066V1.30066Z"
+                  fill="white" />
+              </svg>
+
+              <div class="flex flex-col gap-1">
+                <h6 class="text-base font-extralight">E-Posta</h6>
+                <a href="" class="text-white hover:text-secondary transition-all duration-300 easy-out text-sm w-52">
+                  hello@luwidental.com</a>
+              </div>
+            </div>
+          </nav>
+          <hr class="bg-white/50 h-full border max-lg:w-full hidden max-lg:block">
+          <div class="hidden max-lg:block">
+            <div class="italic font-extrabold text-[15px] text-white mb-4">Bizi Takip Edin!</div>
+            <div class=" max-lg:flex flex-row gap-3">
+              <a href="" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_0_1541" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
+                    height="20">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H19.855V19.9998H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_0_1541)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.7587 0H1.09623C0.489872 0 0 0.49345 0 1.10424V18.8958C0 19.5049 0.489872 20 1.09623 20H10.6048V12.2543H8.01666V9.23571H10.6048V7.01117C10.6048 4.42659 12.1718 3.02017 14.4584 3.02017C15.5546 3.02017 16.4961 3.10215 16.7705 3.13911V5.83943H15.1844C13.9398 5.83943 13.6988 6.43575 13.6988 7.30853V9.23571H16.6668L16.2806 12.2543H13.6988V20H18.7587C19.3635 20 19.855 19.5049 19.855 18.8958V1.10424C19.855 0.49345 19.3635 0 18.7587 0"
+                      fill="white" />
+                  </g>
+                </svg>
+              </a>
+              <a href="" target="_blank">
+                <svg fill="white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M 2.296875 2 C 2.052875 2 1.9117344 2.2756094 2.0527344 2.4746094 L 6.4882812 8.7050781 L 2.0136719 14 L 3.3457031 14 L 7.09375 9.5527344 L 9.9609375 13.580078 C 10.148938 13.844078 10.452391 14 10.775391 14 L 13.703125 14 C 13.947125 14 14.088266 13.724391 13.947266 13.525391 L 9.2753906 6.9628906 L 13.457031 2 L 12.154297 2 L 8.6738281 6.1191406 L 6.0390625 2.4199219 C 5.8510625 2.1559219 5.5476094 2 5.2246094 2 L 2.296875 2 z M 3.6542969 3 L 5.2246094 3 L 12.345703 13 L 10.775391 13 L 3.6542969 3 z">
+                  </path>
+                </svg>
+              </a>
+              <a href="" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" fill="white"
+                  viewBox="0 0 50 50">
+                  <path
+                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <div class="container">
+    <div class="flex justify-between  items-center my-6 max-lg:mb-16 max-lg:flex-col">
+      <div class="max-lg:text-center">Lorem ipsum dolor sit amet consectetur.</div>
+      <a href="https://moonworkshop.com/">
+        <img src="https://moonworkshop.com/img/dijital-reklam-ajansi/moonworkshop_black.png" alt="">
+      </a>
+    </div>
+  </div>
+  <!-- special adding -->
+  <!-- wp start-->
+  <div>
+    <div class="" id="">
+      <div class="whatsapp-main">
+        <div type="floating" class="whatsapp-wrapper hide-whatsapp" style="width: 360px">
+          <div color="rgb(29, 33, 41)" role="button" tabindex="0" class="close_whatsapp"></div>
+          <div class="whatsapp-header">
+            <div size="52" class="support-avatar">
+              <div class="avatar-wrapper">
+                <div class="avatar-img" style="
+                      background-image: url(https://ozaytarim.moonsunum.com/upload/settings/logo-1.webp);
+                    "></div>
+              </div>
+            </div>
+            <div class="header-info">
+              <div class="whatsapp-name">OZAY GROUP TARIM</div>
+              <div class="whatsapp-reply-time">Çevrimiçi</div>
+            </div>
+          </div>
+          <div class="whatsapp-background">
+            <div class="whatsapp-message-container">
+              <div class="loading-animation">
+                <div class="dot-pulse"></div>
+              </div>
+              <div class="whatsapp-message-wrapper">
+                <div class="chat-body-wrapper">
+                  <div class="whatsapp-chat-name">OZAY GROUP TARIM</div>
+                  <div class="whatsapp-chat-message">
+                    <div>
+                      <p>deneme</p>
+                    </div>
+                  </div>
+                  <div class="whatsapp-chat-time">16:54</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/902425027007?text=deneme" title="WhatsApp" class="whatsapp-btn" role="button"
+            target="popup"
+            onclick="window.open('https://wa.me/902425027007?text=deneme','popup','width=700,height=600'); return false;">
+            <svg class="whatsapp-send-icon-small" xmlns="http://www.w3.org/2000/svg" version="1" height="20"
+              viewBox="0 0 90 90">
+              <path
+                d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+                fill="#FFF" />
+            </svg>
+            <span class="chat-button-text">Whatsapp Sohbet</span>
+          </a>
+          <div style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <headers>
+    <a style="background-color: #122e5c" href="tel:902425027007" class="callnow">
+      <i class="fas fa-phone-alt" style="padding-right: 5px; transform: rotate(0deg)"></i>
+      HEMEN ARA
+    </a>
+    <div class="whatsappx">
+      <div class="whatsapp-popup-button play-btn" id="whatsapp-popup">
+        <div class="whatsapp-button-main">WHATSAPP</div>
+      </div>
+    </div>
+  </headers>
+  <!-- wp end-->
+
+  <!-- special adding -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

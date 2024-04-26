@@ -18,15 +18,15 @@ tailwind.config = {
       },
 
       colors: {
-        primary: "#9AC9C1",
-        secondary: "#151515",
+        primary: "#0e68b4",
+        secondary: "#f5a200",
       },
       screens: {
         sm: "640px",
         md: "768px",
-        lg: "960px",
-        xl: "1200px",
-        "2xl": "1140px",
+        lg: "1260px",
+        xl: "1500px",
+        "2xl": "1600px",
       },
     },
   },
@@ -83,7 +83,14 @@ window.onclick = function (event) {
 let swiperHero = new Swiper(".swiper-hero", {
   spaceBetween: 0,
   loop: true,
-  effect: "fade",
+  	pagination: {
+		el: '.custom-pagination', // Use your custom pagination selector
+		clickable: true, // Enable bullet click
+  },
+     navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
   autoplay: {
     delay: 5000,
     disableOnInteraction: true,
@@ -95,26 +102,7 @@ let swiperHero = new Swiper(".swiper-hero", {
   },
 });
 let swiperWhy = new Swiper(".swiper-why", {
-  spaceBetween: 10,
-  loop: false,
-  pagination: {
-    el: ".custom-pagination", // Use your custom pagination selector
-    clickable: true, // Enable bullet click
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-  },
-});
-let swiperService = new Swiper(".swiper-service", {
-  spaceBetween: 10,
+  spaceBetween: 40,
   loop: true,
   pagination: {
     el: ".custom-pagination", // Use your custom pagination selector
@@ -128,7 +116,27 @@ let swiperService = new Swiper(".swiper-service", {
       slidesPerView: 2,
     },
     992: {
-      slidesPerView: 5,
+      slidesPerView: 4,
+    },
+  },
+});
+let swiperTestimonial = new Swiper(".swiper-testimonial", {
+  spaceBetween: 0,
+  loop: true,
+  centeredSlides: true,
+   navigation: {
+        nextEl: ".testimonial-button-next",
+        prevEl: ".testimonial-button-prev",
+    },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
     },
   },
 });
@@ -151,25 +159,7 @@ let swiperVideo = new Swiper(".swiper-video", {
     },
   },
 });
-let swiperTestimonial = new Swiper(".swiper-testimonials", {
-  spaceBetween: 20,
-  loop: false,
-  pagination: {
-    el: ".custom-pagination", // Use your custom pagination selector
-    clickable: true, // Enable bullet click
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-  },
-});
+
 // swiper
 
 // whatsapp
@@ -270,3 +260,24 @@ window.addEventListener("scroll", function () {
 });
 
 // navbar
+// counter
+document.addEventListener('DOMContentLoaded', function () {
+    const counterElements = document.querySelectorAll('.counter');
+    counterElements.forEach(element => {
+        const targetNumber = parseInt(element.textContent, 10);  // Read the number from HTML
+        element.textContent = '0';  // Start from zero
+        let currentNumber = 0;
+
+        const interval = setInterval(() => {
+            if (currentNumber < targetNumber) {
+                currentNumber++;
+                element.textContent = currentNumber;  // Update the displayed number
+            } else {
+                clearInterval(interval);  // Stop updating after reaching the target
+            }
+        }, 20);  // Adjust the speed of the counter here
+    });
+});
+
+
+// counter
